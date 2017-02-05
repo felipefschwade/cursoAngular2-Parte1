@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
     selector : "app",
-    template : ""
+    template : "./app/app.component.html"
 })
 
-class AppComponent 
+export class AppComponent 
 {
 
 }
