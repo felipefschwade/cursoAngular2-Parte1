@@ -13,6 +13,7 @@ export class CadastroComponent {
     cadastrar(event: Event)
     {
         event.preventDefault();
+        console.log(this.foto);
     }
 
 }
