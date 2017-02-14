@@ -6,7 +6,7 @@ export class FotoPipe implements PipeTransform
 {
     transform(fotos: FotoComponent[], digitado: string) 
     {
-        digitado = digitado.toLocaleLowerCase();
+        digitado = digitado.toLowerCase();
         return fotos.filter(foto => foto.titulo.toLowerCase().includes(digitado));
     }
 }
