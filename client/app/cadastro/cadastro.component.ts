@@ -28,6 +28,7 @@ export class CadastroComponent {
     {
         event.preventDefault();
         let headers = new Headers({'Content-Type' : 'application/json'});
+        console.log(this.foto);
         this.htpp.post("v1/fotos", JSON.stringify(this.foto), {headers : headers})
         .subscribe(() => console.log("Imagem Salva Com Sucesso"),
         error => console.log(error));
